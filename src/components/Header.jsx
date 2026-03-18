@@ -1,12 +1,12 @@
 import React from "react";
 
-function Header() {
+function Header({ currentPage, setCurrentPage }) {
   return (
-    <header style={StyleSheet.header}>
+    <header style={styles.header}>
 
-      <h1 style={StyleSheet.console.logo}>ShopSmart</h1>
+      <h1 style={styles.logo}>ShopSmart</h1>
 
-      <nav style={Style.nav}>
+      <nav style={styles.nav}>
         <button onClick={() => setCurrentPage("home")}>Home</button>
         <button onClick={() => setCurrentPage("about")}>About</button>
         <button onClick={() => setCurrentPage("contact")}>Contact</button>
